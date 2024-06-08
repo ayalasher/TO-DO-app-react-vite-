@@ -1,0 +1,19 @@
+.todoitem{
+  
+   color: rgb(28, 17, 17);
+   box-shadow:  rgb(0, 0, 0);  
+}
+
+.todoitemname{
+    padding: 5px;
+    background-color:whitesmoke;
+    border-radius: 5px;
+}
+
+.line{
+    border: 1px solid grey;
+}
+
+.deletebutton{
+    background-color: yellow;
+}

@@ -1,3 +1,5 @@
+import styles from './Form.module.css'
+
 import { useState } from "react";
 
 
@@ -12,9 +14,9 @@ export default function Form({todos,setTodos}) {
         setTodo("") ; 
         
     } 
-    return <form onSubmit={handleSubmit} >
-    <input onChange={(e)=>setTodo(e.target.value)} value={todo} required type="text" />
+    return ( <form styles={styles.form} onSubmit={handleSubmit} >
+    <input placeholder='enter to do item...' onChange={(e)=>setTodo(e.target.value)} value={todo} required type="text" />
     <br /><br />
     <button type="submit" > submit </button>
-</form> 
+</form> );
 }
